@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;900&family=Montserrat:ital,wght@0,500;1,500&family=Outfit:wght@500;600&family=Poppins:ital@1&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --primary-color: #1E9B7B;
+    --secondary-color: #FFFFFF;
+    --background-color: #0E0E0E;
+  }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background-color);
+    font-family: 'Outfit', sans-serif;
+}
