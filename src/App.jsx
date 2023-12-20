@@ -1,4 +1,5 @@
 import './App.scss'
+import Home from './components/Home/Home'
 import Navbar from './components/navbar/navbar'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <Navbar/>
+      <Home/>
     </>
   )
 }

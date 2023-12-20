@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,600;0,700;1,600&family=Inter:wght@500;600;700;900&family=Montserrat:ital,wght@0,500;1,500&family=Outfit:wght@500;600&family=Poppins:ital,wght@0,200;0,300;1,400&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,600;0,700;1,600&family=Inter:wght@500;600;700;900&family=Montserrat:ital,wght@0,500;1,500&family=Outfit:wght@500;600&family=Poppins:ital,wght@0,200;0,300;1,400&family=Righteous&family=Rubik&display=swap");
+
+.home {
+  display: flex;
+  justify-content: space-evenly;
+  height: calc(100vh - 68px);
+}
+
+.homeTexts {
+  width: 100%;
+  padding-left: 1rem;
+  padding: 2rem;
+
+  h1 {
+    color: var(--primary-color);
+    font-family: "Righteous", sans-serif;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    position: relative;
+    top: 30%;
+    // padding: 2rem;
+  }
+  h5 {
+    color: var(--accent-color);
+    position: relative;
+    top: 30%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  button {
+    position: relative;
+    top: 30%;
+    border: 2px solid var(--primary-color);
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: transparent;
+    color: var(--secondary-color);
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 5px solid #1E9B7B;
+    opacity: 0.5; 
+    filter: blur(9px); 
+  }
+  button::after{
+    content: 'GET IN TOUCH';
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    filter: blur(5px);
+  }
+}
+
+img {
+  margin-left: 4rem;
+  position: relative;
+  display: inline-block; 
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  

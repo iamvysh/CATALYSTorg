@@ -22,6 +22,10 @@
             margin-right: 5rem;
             position: relative;
             display: inline-block; 
+
+            // @include mobile{
+            //     margin-right: 2rem;
+            // }
         }
         h4:hover{
             cursor: pointer;
@@ -65,6 +69,7 @@
     h2{
         color: var(--secondary-color);
         font-family: 'Advent Pro', sans-serif;
-        margin-left: 5rem;
+        margin-left: 6%;
+        font-size: 1.5rem;
     }
 }
