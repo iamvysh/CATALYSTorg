@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <h2>CATAL<span>YS</span>T</h2>
-
+    {/* wrapper */}
       <div className='navigation-wrapper'>
         <h4>HOME</h4>
         <h4>SERVICES</h4>
