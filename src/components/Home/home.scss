@@ -9,7 +9,7 @@
 
 .homeTexts {
   width: 100%;
-  padding-left: 1rem;
+  padding-left: 20rem;
   padding: 2rem;
 
   h1 {
@@ -45,6 +45,7 @@
   }
   button:hover {
     cursor: pointer;
+    
   }
   button::before {
     content: "";
@@ -57,6 +58,14 @@
     opacity: 0.5;
     filter: blur(9px);
   }
+  button:hover::before {
+    opacity: 0.8;
+    filter: blur(19px);
+  }
+  button:hover::after {
+    // opacity: 0.8;
+    filter: blur(2px);
+  }
   button::after {
     content: "GET IN TOUCH";
     position: absolute;
@@ -68,7 +77,7 @@
 
 .image-container {
   position: relative;
-  
+
   img {
     margin-left: 4rem;
     height: 100%;
@@ -80,7 +89,7 @@
     position: absolute;
     top: 0;
 
-    .star1{
+    .star1 {
       width: 6px;
       height: 6px;
       background-color: white;
@@ -89,7 +98,7 @@
       top: 15%;
       left: 40%;
     }
-    .star2{
+    .star2 {
       width: 3px;
       height: 3px;
       background-color: white;
@@ -98,7 +107,7 @@
       top: 20%;
       left: 60%;
     }
-    .star3{
+    .star3 {
       width: 4px;
       height: 4px;
       background-color: white;
@@ -107,7 +116,7 @@
       top: 10%;
       left: 80%;
     }
-    .star4{
+    .star4 {
       width: 6px;
       height: 6px;
       background-color: white;
@@ -116,7 +125,7 @@
       top: 28%;
       left: 65%;
     }
-    .star5{
+    .star5 {
       width: 6px;
       height: 6px;
       background-color: white;
@@ -125,7 +134,7 @@
       top: 25%;
       left: 78%;
     }
-    .star6{
+    .star6 {
       width: 3px;
       height: 3px;
       background-color: white;
@@ -133,9 +142,8 @@
       position: absolute;
       top: 55%;
       left: 90%;
-     
     }
-    .star7{
+    .star7 {
       width: 9px;
       height: 9px;
       background-color: white;
@@ -145,7 +153,7 @@
       top: 85%;
       left: 80%;
     }
-    .star8{
+    .star8 {
       width: 4px;
       height: 4px;
       background-color: white;
@@ -154,7 +162,7 @@
       top: 65%;
       left: 10%;
     }
-    .star9{
+    .star9 {
       width: 3px;
       height: 3px;
       background-color: white;
@@ -163,7 +171,7 @@
       top: 48%;
       left: 30%;
     }
-    .star10{
+    .star10 {
       width: 3px;
       height: 3px;
       background-color: white;
@@ -172,10 +180,18 @@
       top: 1%;
       left: 60%;
     }
-    .star10:hover{
-      margin: 10px;
+    .star1:hover,
+    .star2:hover,
+    .star3:hover,
+    .star4:hover,
+    .star5:hover,
+    .star6:hover,
+    .star7:hover,
+    .star8:hover,
+    .star9:hover,
+    .star10:hover {
+      transform: scale(3);
     }
-    
   }
 }
 .runningText {
@@ -183,7 +199,8 @@
   position: absolute;
   bottom: -30px;
   font-size: 27vh;
-  color: #1a1919;
+  color: #161616;
   font-weight: bolder;
   z-index: -1;
+  // filter: inherit;
 }

@@ -5,16 +5,16 @@ const Home = () => {
 
   const sliderVariants = {
     initial :{
-      x:'-10%',
+      x:0,
     },
     animate:{
       x : '-80%',
       opacity:0,
 
       transition : {
-        duration : 15,
+        duration : 20,
         repeat : Infinity,
-        // repeatType:'mirror',
+        repeatType:'mirror',
       }
     }
   }
