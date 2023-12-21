@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,600;0,700;1,600&family=Inter:wght@500;600;700;900&family=Montserrat:ital,wght@0,500;1,500&family=Outfit:wght@500;600&family=Poppins:ital,wght@0,200;0,300;1,400&family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,600;0,700;1,600&family=Inter:wght@500;600;700;900&family=Montserrat:ital,wght@0,500;1,500&family=Outfit:wght@500;600&family=Poppins:ital,wght@0,200;0,300;1,400&family=Righteous&family=Rubik&display=swap");
 
-.home {
+.wrapper {
   display: flex;
   justify-content: space-evenly;
   height: calc(100vh - 68px);
@@ -18,13 +18,13 @@
     letter-spacing: 2px;
     font-size: 2.5rem;
     position: relative;
-    top: 30%;
+    top: 25%;
     // padding: 2rem;
   }
   h5 {
     color: var(--accent-color);
     position: relative;
-    top: 30%;
+    top: 25%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-family: "Rubik", sans-serif;
@@ -33,7 +33,7 @@
 
   button {
     position: relative;
-    top: 30%;
+    top: 25%;
     border: 2px solid var(--primary-color);
     padding-right: 1.5rem;
     padding-left: 1.5rem;
@@ -67,19 +67,22 @@
 
 img {
   margin-left: 4rem;
-  position: relative;
-  display: inline-block; 
+  height: 100%; 
+  z-index: 1;
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+
+  .image-container{
     // background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // z-index: 2;
+  }
+  .runningText{
+    color: #1E9B7B;
+    position: absolute;
+    bottom: -30px;
+    font-size: 27vh;
+    color: #1a1919;
+    font-weight: bolder;
+    z-index: -1;
   }
 
   
