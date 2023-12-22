@@ -41,10 +41,10 @@ const Home = () => {
       </div>
       </div>
       <div className='homeTexts'>
-      <motion.h1 initial={{x:'-500%'}} animate={{x:0}} transition={{type:'spring',damping:25}} >Pioneering Tomorrow's <br/> Digital Solutions  Today</motion.h1>
-      <motion.h5 initial={{x:'-500%'}} animate={{x:0}} transition={{type:'spring',damping:30}}>UNLEASH THE POWER OF POSSIBILITY</motion.h5>
-      <motion.button initial={{x:'-500%'}} animate={{x:0}} transition={{delay:0.7,type:'spring',damping:40}} >GET IN TOUCH</motion.button>
-      <motion.div variants={sliderVariants} initial='initial' animate='animate' className='runningText'>CATALYST</motion.div>
+      <motion.h1 initial={{y:'500%'}} animate={{y:0}} transition={{delay:0.3,type:'spring',stiffness:100}} >Pioneering Tomorrow's <br/> Digital Solutions  Today</motion.h1>
+      <motion.h5 initial={{y:'900%'}} animate={{y:0}} transition={{delay:0.5,type:'spring',stiffness:100}}>UNLEASH THE POWER OF POSSIBILITY</motion.h5>
+      <motion.button initial={{y:'900%'}} animate={{y:0}} transition={{delay:0.7,type:'spring',stiffness:100}} >GET IN TOUCH</motion.button>
+      {/* <motion.div variants={sliderVariants} initial='initial' animate='animate' className='runningText'>CATALYST</motion.div> */}
       </div>
       {/* </div> */}
     </div>

@@ -1,0 +1,57 @@
+
+
+.testimonials{
+
+    h1{
+        color: var(--secondary-color);
+        text-align: center;
+        padding: 4rem;
+        font-weight: bolder;
+        font-size: 7vh;
+
+        span{
+            color: var(--primary-color);
+        }
+    }
+
+    .corousel{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        .leftArrow, .rightArrow{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: #164e40;
+            // padding: 1rem;
+        }
+        img{
+            height: 120px;
+            width: 120px;
+            object-fit: cover;
+        }
+        img::after{
+
+        }
+        p{
+            color: var(--secondary-color);
+        }
+
+        .reviews{
+            width: 70%;
+        }
+        .reviewContents{
+
+            display: flex;
+
+            h3{
+                color: #1a6956;
+            }
+            p{
+                color: rgb(163, 162, 162);
+            }
+        }
+    }
+}
