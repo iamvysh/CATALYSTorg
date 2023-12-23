@@ -1,0 +1,85 @@
+@import '../../App.scss';
+
+.wedo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        color: var(--secondary-color);
+        text-align: center;
+        padding: 3rem;
+        font-weight: bolder;
+        font-size: 7vh;
+    }
+    p{
+        color: var(--secondary-color);
+        text-align: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .circlewrapper{
+        height: 80vh;
+        width: 80%;
+        position: relative;
+    }
+    .image1{
+        position: absolute;
+        left: 42%;
+        top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            margin-top: 10px;
+        }
+        
+    }
+    .image2{
+        position: absolute;
+        left: 70%;
+        top: 24%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            // margin-right: 40px;
+        }
+        img{
+            margin-left: 100px;
+            width: 220px;
+        }
+    }
+    .image3{
+        position: absolute;
+        left: 60%;
+        top: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            margin-top: 20px;
+        }
+    }
+    .image4{
+        position: absolute;
+        left: 25%;
+        top: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image5{
+        position: absolute;
+        left: 7%;
+        top: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
