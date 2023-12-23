@@ -9,16 +9,16 @@ const Testimonials = () => {
     {
       id: 1,
       reviewer: "CODE WITH RABEEH",
-      review: `It has been an absolute pleasure working with catalyst! The service provided was top-notch, and I'm thrilled with the results. they demonstrated exceptional professionalism and delivered beyond my expectations. The experience was smooth, and their expertise truly shines through. Highly recommended for anyone seeking reliable and high-quality service!`,
+      review: `It has been an absolute pleasure working with catalyst! The service provided was top-notch, and I'm thrilled with the results. they demonstrated exceptional professionalism and delivered beyond my expectations. The experience was smooth, and their expertise truly shines through. Highly recommended for anyone seeking reliable and high-quality service!, and they updated about project in day to day basis, frequently asking me that if i need any sort of update if they neeed to change anything ,`,
       company: "BRIDGEON SOLUTIONS",
-      image: "/heroPortrait.png",
+      image: "/reviewer1.jpeg",
     },
     {
       id: 2,
       reviewer: "VYSHNAV",
-      review: `I had a phenomenal experience working with Catalyst. Their team demonstrated unwavering professionalism and an exceptional commitment to delivering top-notch solutions. From the initial consultation to the final implementation, every step was marked by efficiency and expertise. Catalyst not only met but exceeded our expectations, providing innovative and reliable digital solutions that have greatly contributed to our success. I highly recommend Catalyst to anyone seeking a dedicated partner for high-quality services and impactful results.`,
+      review: `I had a phenomenal experience working with Catalyst. Their team demonstrated unwavering professionalism and an exceptional commitment to delivering top-notch solutions. From the initial consultation to the final implementation, every step was marked by efficiency and expertise. Catalyst not only met but exceeded our expectations, providing innovative and reliable digital solutions that have greatly contributed to our success.I highly recommend Catalyst to anyone .`,
       company: "DATA SPOT",
-      image: "/heroPortrait.png",
+      image: "/reviewer2.jpeg",
     },
   ];
 
@@ -38,21 +38,21 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials">
-      <h1>
+      <motion.h1 initial={{opacity:0}} whileInView={{opacity:1}} transition={{ ease:"easeIn", repeat:Infinity, duration:3}}>
         FROM OUR <span>CLIENTS</span>
-      </h1>
+      </motion.h1>
 
       <div className="corousel">
         <motion.div whileTap={{rotate:'360deg'}}  className="leftArrow" onClick={handlePrevClick}><IoIosArrowBack/></motion.div>
         <div className="corouselWrapper">
         <div className="imageWrapper">
-        <div className="overlay"></div>
+        <motion.div className="overlay" initial={{x:'-200%'}} whileInView={{x:0}} transition={{ damping:300}}></motion.div>
         <img src={currentReview.image} alt={currentReview.reviewer} />
         </div>
         <div className="reviews">
           <div className="reviewContents">
-            <h3>{currentReview.reviewer}</h3>
-            <p>({currentReview.company})</p>
+            <motion.h3 initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:2, ease:"circIn"}}>{currentReview.reviewer}</motion.h3>
+            <motion.p initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:6}}>({currentReview.company})</motion.p>
           </div>
            <p>{currentReview.review}</p>
         </div>

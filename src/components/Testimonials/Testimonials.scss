@@ -16,7 +16,10 @@
         
 
         @include mobile{
-            padding: 1rem;
+            padding: 2rem;
+            font-size: 3vh;
+        }
+        @include tablet{
             font-size: 5vh;
         }
 
@@ -31,15 +34,19 @@
         align-items: center;
         width: 95%;
 
+        @include mobile{
+            width: 100%;
+        }
+
         .corouselWrapper{
             display: flex;
-            width: 100%;
             justify-content: space-around;
             width: 90%;
             align-items: center;
 
             @include mobile{
                 flex-direction: column;
+                width: 80%;
             }
         }
         
@@ -64,10 +71,11 @@
                 top: -20px;
                 z-index: -1;
             }
-            .overlay:hover{
-                color: aliceblue;
-                filter: blur(10px);
+           
+            @include mobile{
+                margin: 1rem;
             }
+
         }
 
         .leftArrow, .rightArrow{
@@ -78,6 +86,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include mobile{
+                height: 30px;
+                width: 30px;
+            }
         }
         .leftArrow :hover, .rightArrow:hover{
             color: white;
@@ -92,7 +105,12 @@
         }
 
         .reviews{
-            width: 70%;
+            width: 77%;
+
+            @include mobile{
+                width: 100%;
+                text-align: center;
+            }
         }
         .reviewContents{
 
@@ -101,6 +119,7 @@
 
             @include mobile{
                 flex-direction: column;
+                align-items: center;
             }
 
             h3{
