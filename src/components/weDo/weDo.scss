@@ -6,12 +6,24 @@
     flex-direction: column;
     align-items: center;
 
+    span{
+        color: var(--primary-color);
+    }
+
     h1{
         color: var(--secondary-color);
         text-align: center;
         padding: 3rem;
         font-weight: bolder;
         font-size: 7vh;
+
+        @include mobile{
+            font-size: 3vh;
+            padding: 2rem;
+        }
+        @include tablet{
+            font-size: 5vh;
+        }
     }
     p{
         color: var(--secondary-color);
@@ -24,6 +36,17 @@
         height: 80vh;
         width: 80%;
         position: relative;
+        margin-bottom: 80px;
+
+        @include mobile{
+            height: 50vh;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        @include tablet{
+            height: 60vh;
+            margin-bottom: 0;
+        }
     }
     .image1{
         position: absolute;
@@ -46,9 +69,6 @@
         flex-direction: column;
         align-items: center;
 
-        p{
-            // margin-right: 40px;
-        }
         img{
             margin-left: 100px;
             width: 220px;
@@ -81,5 +101,76 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    @include mobile{
+        .image1,.image2,.image3,.image4,.image5{
+            height: 100px;
+            width: 100px;
+        }
+        img{
+            width: 60px;
+            height: 60px;
+        }
+        .image1{
+            top: 10%;
+            left: 40%;
+
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .image2{
+            top: 27%;
+            img{
+                width: 90px;
+                height: 90px;
+                margin-left: 50px;
+            }
+            p{
+                padding: 0;
+            }
+        }
+        .image3{
+            top: 57%;
+            left: 55%;
+        }
+        .image4{
+            top: 62%;
+            left: 20%;
+        }
+        .image5{
+            img{
+                width: 55px;
+                height: 55px;
+            }
+        }
+
+        p{
+            font-size: 13px;
+        }
+    }
+
+    @include tablet{
+        .image1{
+            top: 10%;
+            left: 40%;
+        }
+        .image2{
+            // left: 65%;
+            top: 29%;
+        }
+        .image3{
+            top: 70%;
+        }
+        .image4{
+            top: 70%;
+            left: 22%;
+        }
+        .image5{
+            left: 5%;
+            top: 35%;
+        }
     }
 }

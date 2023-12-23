@@ -11,7 +11,7 @@ const Testimonials = () => {
       reviewer: "CODE WITH RABEEH",
       review: `It has been an absolute pleasure working with catalyst! The service provided was top-notch, and I'm thrilled with the results. they demonstrated exceptional professionalism and delivered beyond my expectations. The experience was smooth, and their expertise truly shines through. Highly recommended for anyone seeking reliable and high-quality service!, and they updated about project in day to day basis, frequently asking me that if i need any sort of update if they neeed to change anything ,`,
       company: "BRIDGEON SOLUTIONS",
-      image: "/reviewer1.jpeg",
+      image: "/reviewer3.jpeg",
     },
     {
       id: 2,
