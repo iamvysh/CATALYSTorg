@@ -1,0 +1,31 @@
+@import '../../App.scss';
+
+
+h6{
+    color: var(--secondary-color);
+    font-size: 2vh;
+    // letter-spacing: 1px;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    @include mobile{
+        font-size: 1vh;
+    }
+}
+
+.icons{
+    text-align: center;
+
+    svg{
+        height: 40px;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    
+        @include mobile{
+            height: 20px;
+            margin-top: 1rem;
+        }
+    
+    }
+}
