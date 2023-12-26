@@ -20,7 +20,7 @@ const Contact = () => {
           ></textarea>
           <button>SUBMIT</button>
         </div>
-        <div className="details">
+        <motion.div className="details" initial={{opacity:0}} whileInView={{opacity:1, transition: { ease: "easeInOut", duration: 2 }}}> 
           <div className="phone">
           <svg
             viewBox="0 0 24 24"
@@ -75,7 +75,7 @@ const Contact = () => {
             <p className="addressLine">1234 WEB LANE <br/> Tech City, TC 54321 Digital Land</p>
           </div>
           <img src="/wave.gif" alt="" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
