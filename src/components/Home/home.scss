@@ -91,7 +91,7 @@
     color: var(--secondary-color);
 
     @include mobile{
-      top: -35%;
+      top: -30%;
     }
     @include tablet{
       top: -10%;
@@ -283,6 +283,6 @@
   @include mobile{
     font-weight: bolder;
     font-size: 15vh;
-    bottom: 0;
+    bottom: -5%;
   }
 }
