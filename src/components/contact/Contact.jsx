@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <div className="contact">
-      <h1>
+      <motion.h1 initial={{opacity:0}} whileInView={{opacity:1, transition: { ease: "easeInOut", duration: 2 }}}>
         GET IN <span>TOUCH</span>
-      </h1>
+      </motion.h1>
       <div className="contactwrapper">
         <div className="inputwrapper">
           <input type="text" placeholder="email..." />

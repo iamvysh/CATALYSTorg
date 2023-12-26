@@ -42,7 +42,7 @@ const Testimonials = () => {
         FROM OUR <span>CLIENTS</span>
       </motion.h1>
 
-      <div className="corousel">
+      <motion.div className="corousel" initial={{opacity:0}} whileInView={{opacity:1, transition: { ease: "easeInOut", duration: 2 }}}>
         <motion.div whileTap={{rotate:'360deg'}}  className="leftArrow" onClick={handlePrevClick}><IoIosArrowBack/></motion.div>
         <div className="corouselWrapper">
         <div className="imageWrapper">
@@ -58,7 +58,7 @@ const Testimonials = () => {
         </div>
         </div>
         <motion.div whileTap={{rotate:'360deg'}} className="rightArrow" onClick={handleNextClick}><IoIosArrowForward/></motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -5,7 +5,7 @@ const Home = () => {
 
   const sliderVariants = {
     initial :{
-      x: 0,
+      x: '-20%',
     },
     animate:{
       x : '-80%',
@@ -44,7 +44,7 @@ const Home = () => {
       <motion.h1 initial={{y:'500%'}} animate={{y:0}} transition={{delay:0.3,type:'spring',stiffness:100}} >Pioneering Tomorrow's <br/> Digital Solutions  Today</motion.h1>
       <motion.h5 initial={{y:'900%'}} animate={{y:0}} transition={{delay:0.5,type:'spring',stiffness:100}}>UNLEASH THE POWER OF POSSIBILITY</motion.h5>
       <motion.button initial={{y:'900%'}} animate={{y:0}} transition={{delay:0.7,type:'spring',stiffness:100}} >GET IN TOUCH</motion.button>
-      {/* <motion.div variants={sliderVariants} initial='initial' animate='animate' className='runningText'>CATALYST</motion.div> */}
+      <motion.div variants={sliderVariants} initial='initial' animate='animate' className='runningText'>CATALYST</motion.div>
       </div>
       {/* </div> */}
     </div>
